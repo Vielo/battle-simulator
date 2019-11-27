@@ -3,8 +3,99 @@
         <meta charset="UTF-8">
         <title>Battle Simulator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        
+        <div class="logo">
+            <h1>Battle Simulator Prototype</h1>
+        </div>
+        <nav>
+            <div class="navbutton">
+                Adventure
+            </div>
+            <div class="navbutton">
+                Squad
+            </div>
+            <div class="navbutton">
+                Formation
+            </div>
+            <div class="navbutton">
+                Town
+            </div>
+        </nav>
+        <div class="adventure-container">
+            <div class="adventure-tile" id="adventure-tile-1">
+                <h3>Plains</h3>
+                <p>Enemy power: 39</p>
+                <p>Threat: high</p>
+                <p>Progress: 11/25</p>
+            </div>
+            <div class="adventure-tile locked" id="adventure-tile-2">
+                <h3>?</h3>
+            </div>
+            <div class="adventure-tile locked" id="adventure-tile-3">
+                <h3>?</h3>
+            </div>
+            <div class="adventure-tile locked" id="adventure-tile-4">
+                <h3>?</h3>
+            </div>
+            <div class="adventure-tile locked" id="adventure-tile-5">
+                <h3>?</h3>
+            </div>
+            <div class="adventure-tile locked" id="adventure-tile-6">
+                <h3>?</h3>
+            </div>
+            <div class="adventure-tile locked" id="adventure-tile-7">
+                <h3>?</h3>
+            </div>
+            <div class="adventure-tile locked" id="adventure-tile-8">
+                <h3>?</h3>
+            </div>
+            <div class="adventure-tile locked" id="adventure-tile-9">
+                <h3>?</h3>
+            </div>
+        </div>
+        <div class="squad-container">
+            <div class="squad-tile" id="squad-tile-1">
+                    <div class="squad-tile-title">
+                        <h3>Roland</h3>
+                        <h4>Paladin</h4>
+                    </div>
+                    <div class="squad-tile-alert-container">
+                        <div class="squad-tile-alert-item">
+                            <p>+</p>
+                        </div>
+                        <div class="squad-tile-alert-item">
+                            <p>A</p>
+                        </div>
+                        <div class="squad-tile-alert-item">
+                            <p>W</p>
+                        </div>
+                        <div class="squad-tile-alert-item">
+                            <p>?</p>
+                        </div>
+                    </div>
+                <div class="squad-tile-exp-area">
+                        Lvl:&nbsp;<span id="squad-tile-1-current-lvl">38</span>
+                        <progress max="100" value="73"></progress>
+                        <span id="squad-tile-1-next-lvl"> 39</span>
+                </div>
+            </div>
+            <div class="squad-tile" id="squad-tile-2">
+
+            </div>
+            <div class="squad-tile" id="squad-tile-3">
+
+            </div>
+            <div class="squad-tile" id="squad-tile-4">
+
+            </div>
+            <div class="squad-tile" id="squad-tile-5">
+
+            </div>
+            <div class="squad-tile" id="squad-tile-6">
+
+            </div>
+        </div>
     </body>
 </html>

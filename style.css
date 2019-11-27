@@ -1,0 +1,118 @@
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbutton {
+    flex: 1 1 auto;
+    background: #ffeebf;
+    padding: 5px;
+    text-align: center;
+}
+
+.navbutton:hover {
+    background: #decda0
+}
+
+@media (max-width: 400px) {
+    body {
+        max-width: 400px;
+    }
+    
+    .logo {
+        width: 100%;
+        background: #dbe9ff;
+        padding: 5px;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 5px;
+        font-size: 1.5em;
+    }
+    .adventure-container {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 2px;
+    }
+    .adventure-tile {
+        width: 30%;
+        background: #c5e3c3;
+        text-align: center;
+        flex: 1 1 auto;
+        border-radius: 10px;
+        margin: 2px;
+        height: 150px;
+    }
+    .adventure-tile:hover {
+        background: #a0b89e;
+    }
+    .adventure-tile p {
+        font-size: 0.85em;
+    }
+    .locked {
+        background: gray;
+        pointer-events: none;
+    }
+    .locked h3 {
+        font-size: 3em;
+    }
+    .squad-container {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 2px;
+    }
+    .squad-tile {
+        border-radius: 10px;
+        background: #c5e3c3;
+        width: 40%;
+        flex: 1 1 auto;
+        margin: 2px;
+        padding: 0px 3px;
+    }
+    .squad-tile-title h3 {
+        margin: 8px 0px 1px 5px;
+    }
+    .squad-tile-title h4 {
+        margin: 8px 0px 1px 5px;
+    }
+    .squad-tile-alert-container {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 2px;
+        flex: 1 0 auto;
+    }
+    .squad-tile-alert-item {
+        border-radius: 5px;
+        background: gray;
+        flex: 1 0 20%;
+        margin: 2px;
+        text-align: center;
+    }
+    .squad-tile-alert-item p {
+        margin: 5px 0px;
+    }
+    .squad-tile-exp-area {
+        display: flex;
+        padding-bottom: 5px;
+        font-size: 0.9em;
+    }
+    .squad-tile-exp-area progress {
+        max-width: 100px;
+        min-width: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
