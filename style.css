@@ -157,4 +157,10 @@ nav {
         font-size: 0.9em;
         margin: 2px 0px 2px 10px;
     }
+    .inventory-container {
+        width: 100%;
+    }
+    .table-cell-bordered {
+        border: 1px solid black;
+    }
 }
