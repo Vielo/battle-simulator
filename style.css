@@ -228,7 +228,7 @@ nav {
         grid-column: 3 / 7;
         grid-row: 4 / 9;
         border: 1px solid black;
-        padding: 3px;
+        padding: 5px;
         justify-content: left;
     }
     #inventory-details-change {
