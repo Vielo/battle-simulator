@@ -6,24 +6,26 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div class="logo">
-            <h1>Battle Simulator Prototype</h1>
-        </div>
-        <nav>
-            <div class="navbutton">
-                Adventure
+        <header>
+            <div class="logo">
+                <h1>Battle Simulator Prototype</h1>
             </div>
-            <div class="navbutton">
-                Squad
-            </div>
-            <div class="navbutton">
-                Formation
-            </div>
-            <div class="navbutton">
-                Town
-            </div>
-        </nav>
-        <div class="adventure-container">
+            <nav>
+                <div class="navbutton">
+                    Adventure
+                </div>
+                <div class="navbutton">
+                    Squad
+                </div>
+                <div class="navbutton">
+                    Tactics
+                </div>
+                <div class="navbutton">
+                    Town
+                </div>
+            </nav>
+        </header>
+        <section class="adventure-container">
             <div class="adventure-tile" id="adventure-tile-1">
                 <h3>Plains</h3>
                 <p>Enemy power: 39</p>
@@ -54,8 +56,8 @@
             <div class="adventure-tile locked" id="adventure-tile-9">
                 <h3>?</h3>
             </div>
-        </div>
-        <div class="squad-container">
+        </section>
+        <section class="squad-container">
             <div class="squad-tile" id="squad-tile-1">
                     <div class="squad-tile-title">
                         <h3>Roland</h3>
@@ -232,214 +234,59 @@
                     <p class="sub-stat">Legs: 8 (1+4+3)</p>
                 </div>
                 <div class="inventory-container">
-                    <table>
-                        <tr id="row-1">
-                            <td id="cell-1-row-1"></td>
-                            <td id="cell-2-row-1"></td>
-                            <td id="cell-3-row-1"></td>
-                            <td id="cell-4-row-1"></td>
-                            <td id="cell-5-row-1"></td>
-                            <td id="cell-6-row-1"></td>
-                            <td id="cell-7-row-1"></td>
-                            <td id="cell-8-row-1"></td>
-                            <td id="cell-9-row-1"></td>
-                            <td id="cell-10-row-1"></td>
-                        </tr>
-                        <tr id="row-2">
-                            <td id="cell-1-row-2"></td>
-                            <td id="cell-2-row-2"></td>
-                            <td id="cell-3-row-2"></td>
-                            <td id="cell-4-row-2"></td>
-                            <td class="table-cell-bordered" id="cell-5-row-2" rowspan="2" colspan="2">Helmet<br> (Heavy)</td>
-                            <!--<td id="cell-6-row-2"></td> overlapped by above colspan2  -->
-                            <td class="table-cell-bordered" id="cell-7-row-2">Amulet</td>
-                            <td id="cell-8-row-2"></td>
-                            <td id="cell-9-row-2"></td>
-                            <td id="cell-10-row-2"></td>
-                        </tr>
-                        <tr id="row-3">
-                            <td id="cell-1-row-3"></td>
-                            <td id="cell-2-row-3"></td>
-                            <td id="cell-3-row-3"></td>
-                            <td id="cell-4-row-3"></td>
-                            <!--<td id="cell-5-row-3"></td> overlapped by cell-5-row-2 rowspan2 -->
-                            <!--<td id="cell-6-row-3"></td> overlapped by cell-5-row-2 colspan2 -->
-                            <td id="cell-7-row-3"></td>
-                            <td id="cell-8-row-3"></td>
-                            <td id="cell-9-row-3"></td>
-                            <td id="cell-10-row-3"></td>
-                        </tr>
-                        <tr id="row-4">
-                            <td id="cell-1-row-4"></td>
-                            <td class="table-cell-bordered" id="cell-2-row-4" rowspan="2" colspan="2">Gauntlets</td>
-                            <!--<td id="cell-3-row-4"></td> -->
-                            <td id="cell-4-row-4"></td>
-                            <td class="table-cell-bordered" id="cell-5-row-4" rowspan="2" colspan="2">Helmet<br> (Light)</td>
-                            <!--<td id="cell-6-row-4"></td> -->
-                            <td id="cell-7-row-4"></td>
-                            <td class="table-cell-bordered" id="cell-8-row-4" rowspan="2" colspan="2">Arms<br>(Heavy)</td>
-                            <!--<td id="cell-9-row-4"></td> -->
-                            <td id="cell-10-row-4"></td>
-                        </tr>
-                        <tr id="row-5">
-                            <td id="cell-1-row-5"></td>
-                            <!--<td id="cell-2-row-5"></td> -->
-                            <!--<td id="cell-3-row-5"></td> -->
-                            <td id="cell-4-row-5"></td>
-                            <!--<td id="cell-5-row-5"></td> -->
-                            <!--<td id="cell-6-row-5"></td> -->
-                            <td id="cell-7-row-5"></td>
-                            <!--<td id="cell-8-row-5"></td> -->
-                            <!--<td id="cell-9-row-5"></td> -->
-                            <td id="cell-10-row-5"></td>
-                        </tr>
-                        <tr id="row-6">
-                            <td id="cell-1-row-6"></td>
-                            <td class="table-cell-bordered" id="cell-2-row-6" rowspan="2" colspan="2">Weapon</td>
-                            <!--<td id="cell-3-row-6"></td> -->
-                            <td id="cell-4-row-6"></td>
-                            <td id="cell-5-row-6"></td>
-                            <td id="cell-6-row-6"></td>
-                            <td id="cell-7-row-6"></td>
-                            <td class="table-cell-bordered" id="cell-8-row-6" rowspan="2" colspan="2">Arms<br>(Light)</td>
-                            <!--<td id="cell-9-row-6"></td> -->
-                            <td id="cell-10-row-6"></td>
-                        </tr>
-                        <tr id="row-7">
-                            <td id="cell-1-row-7"></td>
-                            <!--<td id="cell-2-row-7"></td> -->
-                            <!--<td id="cell-3-row-7"></td> -->
-                            <td id="cell-4-row-7"></td>
-                            <td class="table-cell-bordered" id="cell-5-row-7" rowspan="2" colspan="2">Armor<br>(Heavy)</td>
-                            <!--<td id="cell-6-row-7"></td> -->
-                            <td id="cell-7-row-7"></td>
-                            <!--<td id="cell-8-row-7"></td> -->
-                            <!--<td id="cell-9-row-7"></td> -->
-                            <td id="cell-10-row-7"></td>
-                        </tr>
-                        <tr id="row-8">
-                            <td id="cell-1-row-8"></td>
-                            <td id="cell-2-row-8"></td>
-                            <td id="cell-3-row-8"></td>
-                            <td id="cell-4-row-8"></td>
-                            <!--<td id="cell-5-row-8"></td> -->
-                            <!--<td id="cell-6-row-8"></td> -->
-                            <td id="cell-7-row-8"></td>
-                            <td id="cell-8-row-8"></td>
-                            <td id="cell-9-row-8"></td>
-                            <td id="cell-10-row-8"></td>
-                        </tr>
-                        <tr id="row-9">
-                            <td id="cell-1-row-9"></td>
-                            <td id="cell-2-row-9"></td>
-                            <td id="cell-3-row-9"></td>
-                            <td id="cell-4-row-9"></td>
-                            <td class="table-cell-bordered" id="cell-5-row-9" rowspan="2" colspan="2">Armor<br>(Light)</td>
-                            <!--<td id="cell-6-row-9"></td> -->
-                            <td id="cell-7-row-9"></td>
-                            <td class="table-cell-bordered" id="cell-8-row-9" rowspan="2" colspan="2">Shield</td>
-                            <!--<td id="cell-9-row-9"></td> -->
-                            <td id="cell-10-row-9"></td>
-                        </tr>
-                        <tr id="row-10">
-                            <td id="cell-1-row-10"></td>
-                            <td id="cell-2-row-10"></td>
-                            <td id="cell-3-row-10"></td>
-                            <td id="cell-4-row-10"></td>
-                            <!--<td id="cell-5-row-10"></td> -->
-                            <!--<td id="cell-6-row-10"></td> -->
-                            <td id="cell-7-row-10"></td>
-                            <!--<td id="cell-8-row-10"></td> -->
-                            <!--<td id="cell-9-row-10"></td> -->
-                            <td id="cell-10-row-10"></td>
-                        </tr>
-                        <tr id="row-11">
-                            <td id="cell-1-row-11"></td>
-                            <td id="cell-2-row-11"></td>
-                            <td id="cell-3-row-11"></td>
-                            <td class="table-cell-bordered" id="cell-4-row-11">Ring<br>(Left)</td>
-                            <td id="cell-5-row-11"></td>
-                            <td id="cell-6-row-11"></td>
-                            <td class="table-cell-bordered" id="cell-7-row-11">Ring<br>(Right)</td>
-                            <td id="cell-8-row-11"></td>
-                            <td id="cell-9-row-11"></td>
-                            <td id="cell-10-row-11"></td>
-                        </tr>
-                        <tr id="row-12">
-                            <td id="cell-1-row-12"></td>
-                            <td id="cell-2-row-12"></td>
-                            <td id="cell-3-row-12"></td>
-                            <td id="cell-4-row-12"></td>
-                            <td class="table-cell-bordered" id="cell-5-row-12" rowspan="2" colspan="2">Legs<br>(Heavy)</td>
-                            <!--<td id="cell-6-row-12"></td> -->
-                            <td id="cell-7-row-12"></td>
-                            <td id="cell-8-row-12"></td>
-                            <td id="cell-9-row-12"></td>
-                            <td id="cell-10-row-12"></td>
-                        </tr>
-                        <tr id="row-13">
-                            <td id="cell-1-row-13"></td>
-                            <td id="cell-2-row-13"></td>
-                            <td id="cell-3-row-13"></td>
-                            <td id="cell-4-row-13"></td>
-                            <!--<td id="cell-5-row-13"></td> -->
-                            <!--<td id="cell-6-row-13"></td> -->
-                            <td id="cell-7-row-13"></td>
-                            <td id="cell-8-row-13"></td>
-                            <td id="cell-9-row-13"></td>
-                            <td id="cell-10-row-13"></td>
-                        </tr>
-                        <tr id="row-14">
-                            <td id="cell-1-row-14"></td>
-                            <td id="cell-2-row-14"></td>
-                            <td id="cell-3-row-14"></td>
-                            <td id="cell-4-row-14"></td>
-                            <td class="table-cell-bordered" id="cell-5-row-14" rowspan="2" colspan="2">Legs<br>(Light)</td>
-                            <!--<td id="cell-6-row-14"></td> -->
-                            <td id="cell-7-row-14"></td>
-                            <td id="cell-8-row-14"></td>
-                            <td id="cell-9-row-14"></td>
-                            <td id="cell-10-row-14"></td>
-                        </tr>
-                        <tr id="row-15">
-                            <td id="cell-1-row-15"></td>
-                            <td id="cell-2-row-15"></td>
-                            <td id="cell-3-row-15"></td>
-                            <td id="cell-4-row-15"></td>
-                            <!--<td id="cell-5-row-15"></td> -->
-                            <!--<td id="cell-6-row-15"></td> -->
-                            <td id="cell-7-row-15"></td>
-                            <td id="cell-8-row-15"></td>
-                            <td id="cell-9-row-15"></td>
-                            <td id="cell-10-row-15"></td>
-                        </tr>
-                        <tr id="row-16">
-                            <td id="cell-1-row-16"></td>
-                            <td id="cell-2-row-16"></td>
-                            <td id="cell-3-row-16"></td>
-                            <td id="cell-4-row-16"></td>
-                            <td id="cell-5-row-16"></td>
-                            <td id="cell-6-row-16"></td>
-                            <td id="cell-7-row-16"></td>
-                            <td id="cell-8-row-16"></td>
-                            <td id="cell-9-row-16"></td>
-                            <td id="cell-10-row-16"></td>
-                        </tr>
-                        <tr id="row-17">
-                            <td id="cell-1-row-17"></td>
-                            <td id="cell-2-row-17"></td>
-                            <td id="cell-3-row-17"></td>
-                            <td id="cell-4-row-17"></td>
-                            <td id="cell-5-row-17"></td>
-                            <td id="cell-6-row-17"></td>
-                            <td id="cell-7-row-17"></td>
-                            <td id="cell-8-row-17"></td>
-                            <td id="cell-9-row-17"></td>
-                            <td id="cell-10-row-17"></td>
-                        </tr>
-                    </table>
+                    <div class="inventory-item" id="helmet">
+                        <p>helmet</p>
+                    </div>
+                    <div class="inventory-item" id="chest">
+                        <p>chest</p>
+                    </div>
+                    <div class="inventory-item" id="arms">
+                        <p>arms</p>
+                    </div>
+                    <div class="inventory-item" id="weapon">
+                        <p>weapon</p>
+                    </div>
+                    <div class="inventory-item" id="shield">
+                        <p>shield</p>
+                    </div>
+                    <div class="inventory-item" id="hands">
+                        <p>hands</p>
+                    </div>
+                    <div class="inventory-item" id="belt">
+                        <p>belt</p>
+                    </div>
+                    <div class="inventory-item" id="legs">
+                        <p>legs</p>
+                    </div>
+                    <div class="inventory-item" id="feet">
+                        <p>feet</p>
+                    </div>
+                    <div class="inventory-item" id="amulet">
+                        <p>am</p>
+                    </div>
+                    <div class="inventory-item" id="ring-left">
+                        <p>lR</p>
+                    </div>
+                    <div class="inventory-item" id="ring-right">
+                        <p>rR</p>
+                    </div>
+                    <div class="inventory-item" id="selected-inventory-item">
+                        <p><strong>Very Rare Crystal Breastplate</strong></p>
+                        <p>Type: plate</p>
+                        <p>Armor class: 150</p>
+                        <p>Absorption: 6</p>
+                        <button id="inventory-details-change">DETAILS/MANAGE</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="tactics-container">
+            <div class="formation-container" id="formation-container-second-line">
+                Second line
+            </div>
+            <div class="formation-container" id="formation-container-front-line">
+                Front line
+            </div>
+        </section>
     </body>
 </html>
