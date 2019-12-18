@@ -69,6 +69,42 @@ nav {
     .locked h3 {
         font-size: 3em;
     }
+    .battle-container {
+        width: 100%;
+        flex-flow: row nowrap;
+        padding: 2px;
+        display: flex;
+        flex: 1 1 auto;
+    }
+    .battle-container-team {
+        width: 40%;
+        flex-flow: row nowrap;
+        padding: 2px;
+        display: flex;
+        flex: 1 1 auto;
+    }
+    .battle-container-line {
+        width: 40%;
+        flex-flow: column;
+        display: flex;
+        flex: 1 1 auto;
+    }
+    .battle-container-unit-slot {
+        display: flex;
+        flex: 1 1 auto;
+        border-radius: 5px;
+        background: #e8d9b0;
+        margin: 2px;
+        padding: 2px;
+        justify-content: center;
+    }
+    .battle-container-unit-slot p {
+        margin: 0px;
+    }
+    .unit-icon {
+        max-width: 35px;
+        max-height: 35px;
+    }
     .squad-container {
         display: flex;
         flex-flow: row wrap;
