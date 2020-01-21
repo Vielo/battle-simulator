@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Battle Simulator</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -21,7 +21,7 @@
                     Tactics
                 </div>
                 <div class="navbutton">
-                    Town
+                    <s>Town</s>
                 </div>
             </nav>
         </header>
@@ -61,13 +61,19 @@
             <div class="battle-container-team" id="player-team">
                 <div class="battle-container-line" id="player-line2">
                     <div class="battle-container-unit-slot" id="slot-player-2-top">
+                        <p>Lioneye</p>
                         <p><img class="unit-icon" src="img/unit-icons/archer.png"></p>
+                        <p><progress max="100" value="63"></progress></p>
                     </div>
                     <div class="battle-container-unit-slot" id="slot-player-2-middle">
+                        <p>Avicenna</p>
                         <p><img class="unit-icon" src="img/unit-icons/cleric.png"></p>
+                        <p><progress max="100" value="100"></progress></p>
                     </div>
                     <div class="battle-container-unit-slot" id="slot-player-2-bottom">
+                        <p>Wilhelm</p>
                         <p><img class="unit-icon" src="img/unit-icons/crossbowman.png"></p>
+                        <p><progress max="100" value="79"></progress></p>
                     </div>
                 </div>
                 <div class="battle-container-line" id="player-line1">
@@ -85,13 +91,19 @@
             <div class="battle-container-team" id="enemy-team">
                 <div class="battle-container-line" id="enemy-line1">
                     <div class="battle-container-unit-slot" id="slot-enemy-1-top">
+                        <p>Skeleton</p>
                         <p><img class="unit-icon" src="img/enemies-icons/skeleton.png"></p>
+                        <p><progress max="100" value="13"></progress></p>
                     </div>
                     <div class="battle-container-unit-slot" id="slot-enemy-1-middle">
+                        <p>Skeleton</p>
                         <p><img class="unit-icon" src="img/enemies-icons/skeleton.png"></p>
+                        <p><progress max="100" value="23"></progress></p>
                     </div>
                     <div class="battle-container-unit-slot" id="slot-enemy-1-bottom">
+                        <p>Skeleton</p>
                         <p><img class="unit-icon" src="img/enemies-icons/skeleton.png"></p>
+                        <p><progress max="100" value="99"></progress></p>
                     </div>
                 </div>
                 <div class="battle-container-line" id="enemy-line2">
@@ -105,6 +117,22 @@
                         <p><img class="unit-icon" src="img/enemies-icons/pentagram.png"></p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="battle-log-container">
+            <div class="battle-log-filters">All | Damage | Items (these are filters)</div>
+            <div class="battle-log">
+                <p>Roland hit Skeleton for 5 dmg</p>
+                <p>Skeleton hit Lioneye for 8 dmg</p>
+                <p>Avicenna heals Lioneye for 5 hp</p>
+                <p>Wilhelm critically shot Daemon for 21 dmg. Daemon dies. +83 party exp.</p>
+                <p>Found 13 gold and Iron Hat.</p>
+                <p>Maximus hit Skeleton for 9 dmg.</p>
+                <p>Daemon hit Vercetorix for 7 dmg.</p>
+                <p>Daemon missed.</p>
+                <p>Wilhelm missed.</p>
+                <p>Skeleton critically hit Maximus for 13 dmg.</p>
+                <p>Avicenna hit Skeleton for 12 dmg. Skeleton dies. +34 party exp.</p>
             </div>
         </section>
         <section class="squad-container">
@@ -333,10 +361,40 @@
         
         <section class="tactics-container">
             <div class="formation-container" id="formation-container-second-line">
-                Second line
+                <p>Second line</p>
+                <div class="battle-container-unit-slot">
+                    <p>Lioneye</p>
+                    <p><img class="unit-icon" src="img/unit-icons/archer.png"></p>
+                    <p><progress max="100" value="63"></progress></p>
+                </div>
+                <div class="battle-container-unit-slot">
+                    <p>Avicenna</p>
+                    <p><img class="unit-icon" src="img/unit-icons/cleric.png"></p>
+                    <p><progress max="100" value="100"></progress></p>
+                </div>
+                <div class="battle-container-unit-slot">
+                    <p>Wilhelm</p>
+                    <p><img class="unit-icon" src="img/unit-icons/crossbowman.png"></p>
+                    <p><progress max="100" value="79"></progress></p>
+                </div>
             </div>
             <div class="formation-container" id="formation-container-front-line">
-                Front line
+                <p>Front line</p>
+                <div class="battle-container-unit-slot">
+                    <p>Lioneye</p>
+                    <p><img class="unit-icon" src="img/unit-icons/archer.png"></p>
+                    <p><progress max="100" value="63"></progress></p>
+                </div>
+                <div class="battle-container-unit-slot">
+                    <p>Avicenna</p>
+                    <p><img class="unit-icon" src="img/unit-icons/cleric.png"></p>
+                    <p><progress max="100" value="100"></progress></p>
+                </div>
+                <div class="battle-container-unit-slot">
+                    <p>Wilhelm</p>
+                    <p><img class="unit-icon" src="img/unit-icons/crossbowman.png"></p>
+                    <p><progress max="100" value="79"></progress></p>
+                </div>
             </div>
         </section>
     </body>
