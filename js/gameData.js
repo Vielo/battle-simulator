@@ -1,47 +1,41 @@
-var characterClassesData = {
-    warrior: {
-        names: ["Jurand", "Zawisza", "Siegfried", "Ironskin", "Harald", "Marco", "Francis"],
-        stats: {
-            strength: 14,
-            agility: 8,
-            dexterity: 9,
-            vitality: 13,
-            intelligence: 7,
-            willpower: 9
-        }
-    },
-    ranger: {
-        names: ["Wilhelm", "Robin", "Jean", "Baldwin", "Vasyl", "Tanja", "Xiu"],
-        stats: {
-            strength: 7,
-            agility: 8,
-            dexterity: 16,
-            vitality: 7,
-            intelligence: 9,
-            willpower: 4
-        }
-    },
-    cleric: {
-        names: ["Avicenna", "Hyppokrates", "Guldorf", "Coronavix", "Thomas", "Marcel", "Mia"],
-        stats: {
-            strength: 5,
-            agility: 8,
-            dexterity: 7,
-            vitality: 10,
-            intelligence: 13,
-            willpower: 14
-        }
-    },
-    mage: {
-        names: ["Merlin", "Strange", "Alucard", "Houdini", "Maryanna", "Victoria", "Weldermort"]
-    },
-    stats: {
-        strength: 5,
-        agility: 8,
-        dexterity: 8,
-        vitality: 5,
-        intelligence: 19,
-        willpower: 14
-    }
+const names = ["Jurand", "Zawisza", "Siegfried", "Ironskin", "Harald", "Marco", "Francis", "Wilhelm", "Robin", "Jean", "Baldwin", "Vasyl", "Tanja", "Xiu", "Avicenna", "Hyppokrates", "Guldorf", "Coronavix", "Thomas", "Marcel", "Mia", "Merlin", "Strange", "Alucard", "Houdini", "Maryanna", "Victoria", "Weldermort"]
+const baseHeroStats = {
+    strength: 8,
+    agility: 8,
+    dexterity: 8,
+    vitality: 8,
+    intelligence: 8,
+    willpower: 8
 }
 
+
+var characterClassesData = {
+    recruit: {
+        codeName: "recruit",
+        className: "Recruit",
+    },    
+    warrior: {
+        codeName: "warrior",
+        className: "Warrior",
+        primaryStats: ["strength", "vitality"],
+        secondaryStats: ["agilty", "dexterity"]
+    },
+    ranger: {
+        codeName: "ranger",
+        className: "Ranger",
+        primaryStats: ["dexterity", "agility"],
+        secondaryStats: ["strength", "vitality"]
+    },
+    cleric: {
+        codeName: "cleric",
+        className: "Cleric",
+        primaryStats: ["willpower", "vitality"],
+        secondaryStats: ["intelligence", "strength"]
+    },
+    mage: {
+        codeName: "mage",
+        className: "Mage",
+        primaryStats: ["intelligence", "willpower"],
+        secondaryStats: ["agility", "vitality"]
+    }
+}
